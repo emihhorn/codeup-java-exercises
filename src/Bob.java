@@ -12,7 +12,12 @@ public class Bob {
         System.out.println("Whoa, chill out!");
     }else if(input.endsWith("?")){
         System.out.println("Sure.");
+    }else if(input.isEmpty()){
+        System.out.println("Fine. Be that way!");
+    }else{
+        System.out.println("Whatever.");
     }
+
     //Bob is a lackadaisical teenager. In conversation, his responses are very limited.
 
 
