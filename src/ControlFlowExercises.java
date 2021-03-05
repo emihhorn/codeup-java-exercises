@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.stream.IntStream;
 
 public class ControlFlowExercises {
     public static void main(String[] args) {
@@ -101,6 +102,11 @@ public class ControlFlowExercises {
     //For the multiples of five: print “Buzz”.
     //For numbers which are multiples of both three and five: print “FizzBuzz”.
     //Display a table of powers.
+        //System.out.printf("%-6d | %-7d | %d \n", i, i * i, i * i * i); -> that’s what Audi did.
+
+
+        System.out.println("Here is your table!");
+        System.out.println(" ");
         System.out.println("number" + " | " + "squared" + "  | " + "cubed");
         System.out.println("------" + " | " + "-------" + "  | " + "-----");
             final int NMAX = 3;
