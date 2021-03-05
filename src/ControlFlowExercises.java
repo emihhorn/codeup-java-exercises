@@ -72,35 +72,56 @@ public class ControlFlowExercises {
 
 
     //Fizzbuzz
-        for(int i = 1; i < 100; i++) {
-            System.out.println(i);
-            if (i == 5) {
-                break; // --------------+
-            } //                        |
-        }
+//        for(int i = 1; i < 100; i++) {
+//            System.out.println(i);
+//            if (i == 5) {
+//                break; // --------------+
+//            } //                        |
+//        }
+//
+//        for(double i = 1; i<100; i++) {
+//            if(i % 3 == 0 && i % 5 == 0){
+//                System.out.printf("FizzBuzz %.0f\n", i);
+//            } else if(i % 5 == 0){
+//                System.out.printf("Buzz %.0f\n", i);
+//            } else if(i % 3 == 0) {
+//                System.out.printf("Fizz %.0f\n", i);
+//            }
+//            else{
+//                System.out.printf("%.0f\n", i);
+//            }
+//        }
 
-        for(double i = 1; i<100; i++) {
-            if(i % 3 == 0 && i % 5 == 0){
-                System.out.printf("FizzBuzz %.0f\n", i);
-            } else if(i % 5 == 0){
-                System.out.printf("Buzz %.0f\n", i);
-            } else if(i % 3 == 0) {
-                System.out.printf("Fizz %.0f\n", i);
-            }
-            else{
-                System.out.printf("%.0f\n", i);
-            }
-        }
 
-
-    //One of the most common interview questions for entry-level programmers is the FizzBuzz test. Developed by Imran Ghory, the test is designed to assess basic looping and conditional logic skills.
+    //One of the most common interview questions for entry-level programmers is the FizzBuzz test.
+        // Developed by Imran Ghory, the test is designed to assess basic looping and conditional logic skills.
     //
     //Write a program that prints the numbers from 1 to 100.
     //For multiples of three: print “Fizz” instead of the number.
     //For the multiples of five: print “Buzz”.
     //For numbers which are multiples of both three and five: print “FizzBuzz”.
     //Display a table of powers.
-    //
+        System.out.println("number" + " | " + "squared" + "  | " + "cubed");
+        System.out.println("------" + " | " + "-------" + "  | " + "-----");
+            final int NMAX = 3;
+            final double XMAX = 5;
+
+            for(int n = 1; n <= NMAX; n++) {
+                System.out.printf("%7d", n);
+            }
+        System.out.println();
+            for(int n = 1; n <= NMAX; n++){
+                System.out.printf("%7s", "");
+            }
+            System.out.println();
+
+            for (double x = 1; x <=XMAX; x++) {
+                for (int n = 1; n <= NMAX; n++) {
+                    System.out.printf("%7.0f", Math.pow(x,n));
+                }
+                System.out.println();
+            }
+
     //Prompt the user to enter an integer.
     //Display a table of squares and cubes from 1 to the value entered.
     //Ask if the user wants to continue.
