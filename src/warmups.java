@@ -10,11 +10,11 @@ public class warmups {
           System.out.println(sum(10));
 
 
-if(scanner.nextBoolean()==true) {
-        System.out.println("This will be fun");
-    } else {
-        System.out.println("Maybe next time");
-    }
+//if(scanner.nextBoolean()==true) {
+//        System.out.println("This will be fun");
+//    } else {
+//        System.out.println("Maybe next time");
+//    }
 }
 
             public static char firstChar(String input) {
