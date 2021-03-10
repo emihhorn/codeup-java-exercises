@@ -6,10 +6,17 @@ public class DishTest {
         dish1.nameOfDish = "Soup";
         dish1.wouldRecommend = true;
 
+
+        Dish dish2 = new Dish();
+        dish2.nameOfDish = "My mom's spaghetti";
+        dish2.costInCents = 1000;
+        dish2.wouldRecommend = true;
+
 //        dish1.printSummary();
 
 
-        System.out.println(DishTools.shoutDishName(dish1) + "\n");
-        System.out.println(DishTools.analyzeDishCost(dish1) + "\n");
+        System.out.println(DishTools.shoutDishName(dish1));
+        System.out.println(DishTools.analyzeDishCost(dish1));
+        System.out.println(DishTools.flipRecommendation(dish1));
     }
 }
