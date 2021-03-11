@@ -1,4 +1,4 @@
-import java.sql.SQLOutput;
+package OopLecture;
 
 public class Person {
     private String name;
