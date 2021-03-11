@@ -1,3 +1,5 @@
+package OopLecture;
+
 public class DishTest {
     public static void main(String[] args){
 
@@ -15,10 +17,10 @@ public class DishTest {
 //        dish1.printSummary();
 
 
-//        System.out.println(DishTools.shoutDishName(dish1));
-//        System.out.println(DishTools.shoutDishName(dish2));
-//        System.out.println(DishTools.analyzeDishCost(dish1));
-//        System.out.println(DishTools.analyzeDishCost(dish2));
-//        System.out.println(DishTools.flipRecommendation(dish1));
+//        System.out.println(OopLecture.DishTools.shoutDishName(dish1));
+//        System.out.println(OopLecture.DishTools.shoutDishName(dish2));
+//        System.out.println(OopLecture.DishTools.analyzeDishCost(dish1));
+//        System.out.println(OopLecture.DishTools.analyzeDishCost(dish2));
+//        System.out.println(OopLecture.DishTools.flipRecommendation(dish1));
     }
 }
