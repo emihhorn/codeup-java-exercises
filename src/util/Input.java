@@ -51,8 +51,8 @@ public class Input {
         System.out.println("You entered: " + userDouble);
 
 
-//        int userInt = input.getInt();
-//        System.out.println("Your int is:" + userInt);
+//        int userInt = input.getDouble();
+//        System.out.println("Your int is:" + userDouble);
 //
 
 //        boolean willCont = input.yesNo();
