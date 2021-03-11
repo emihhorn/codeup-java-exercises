@@ -1,5 +1,15 @@
+import java.sql.SQLOutput;
+
 public class Person {
     private String name;
+
+    public Person(String name) {
+        this.name = name;
+    }
+
+    public Person() {
+
+    }
 
     public String getName(){
 //TODO: return the person's name
@@ -18,8 +28,11 @@ public class Person {
 
         }
         public static void main(String[] args){
-            Person p1 = new Person();
-            p1.name = "Jane";
+            Person p1 = new Person("Emily");
+//            p1.name = "Jane";
             p1.sayHello();
+            p1.setName("Jane");
+            p1.sayHello();
+            System.out.println(p1.getName());
     }
 }
