@@ -1,3 +1,5 @@
+package OopLecture;
+
 public class Dish {
 
     private int costInCents;
