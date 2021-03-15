@@ -2,28 +2,7 @@ package jelly;
 
 import static jelly.Ingredient.*;
 
-public class InheritancePolymorphismLec {
-
-    //---------- Mini-Exercise 1
-    //Consider making a PB&J sandwhich (again...).
-    //You have the following categories:
-
-    //  KitchenTool (what is common between knifes and plates?)
-    //    Knife; -- boolean isClean; cutSandwich(); spread(); String typeOfKnife
-    //    Plate; -- String shape; String material;
-    //     boolean isDisposable;
-
-
-
-    //  Ingredient (what is common between these ingredients?)
-    //    Jelly; -- String flavor; String jamOrJelly;
-    //    PeanutButter; -- boolean isSmooth; String typeOfNut;
-    //    Bread; -- String typeOfBread; boolean hasCrust; sliceBread(); toast()
-
-    //boolean edible; expirationDate(); boolean isPackaged; boolean isOrganic; productionProcess(); boolean isHomemade
-
-    //Add at least two characteristics and two actions relevent to each thing.
-
+public class Kitchen {
     //---------- Mini-Exercise 2
     //Create Java classes for the following:
     //  KitchenTool
@@ -58,11 +37,26 @@ public class InheritancePolymorphismLec {
     //- call the throwAwayIngredient() method multiple times passing various instances of the above ingredients
 
 
-//    public static void main(String[] args) {
-//
-//        Ingredient.throwAway();
-//
-//
-//    }
+    public static void main(String[] args) {
+
+
+
+        KitchenTool knife = new Knife();
+        knife.isDis();
+
+        System.out.println(knife.isClean());
+
+        Plate plate = new Plate();
+        Bread bread = new Bread();
+        Jelly jelly= new Jelly();
+        PeanutButter peanutButter = new PeanutButter();
+
+        System.out.println();plate.putAway();
+        System.out.println();plate.wash();
+
+        jelly.throwAway();
+        peanutButter.throwAway();
+
+    }
 
 }
