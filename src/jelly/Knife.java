@@ -1,2 +1,6 @@
-package jelly;public class Knife {
+package jelly;
+
+public class Knife extends KitchenTool{
+
+
 }
