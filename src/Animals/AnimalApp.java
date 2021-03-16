@@ -1,8 +1,10 @@
 package Animals;
-
-
 import Animals.Dog;
 import Animals.Wolf;
+
+import Animals.Giraffids;
+import Animals.Okapis;
+
 import java.util.Scanner;
 public class AnimalApp {
     public static void main(String[] args) {
@@ -27,4 +29,9 @@ public class AnimalApp {
             wolf.printDetails();
         }
     }
+
+
+
+
+
 }
