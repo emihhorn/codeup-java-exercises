@@ -11,7 +11,7 @@ public class Wolf extends Canine {
         this.nativeArea = nativeArea;
     }
 
-    @Override
+//    @Override
     public void printEmote() {
         System.out.println("*Stares at the moon*");
 
@@ -30,6 +30,7 @@ public class Wolf extends Canine {
     }
 
     public void printDetails(){
+        printEmote();
         makeSound();
         printDelimiter();
         printSubSpecies();
