@@ -11,7 +11,7 @@ public class Dog extends Canine {
 
 //    @Override
     public void printEmote() {
-
+        System.out.println("*Wags tail*\n");
     }
 
     public void makeSound() {
@@ -19,15 +19,6 @@ public class Dog extends Canine {
     }
     public void printDelimiter(){
         System.out.println("****************************");
-    }
-    public void printSubSpecies(){
-        System.out.printf("Sub-Species: %s\n", this.subSpecies);
-    }
-    public void printCommonName(){
-        System.out.printf("Common Name: %s\n", this.commonName);
-    }
-    public void printSize(){
-        System.out.printf("Size: %s\n", this.size);
     }
     public void printFurColor(){
         System.out.printf("Fur Color: %s\n", this.furColor);
