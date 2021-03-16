@@ -1,2 +1,6 @@
-package Animals;public interface Describable {
+package Animals;
+
+public interface Describable {
+
+    void printDetails();
 }
