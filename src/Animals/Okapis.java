@@ -1,2 +1,4 @@
-package Animals;public class Okapis {
+package Animals;
+
+public class Okapis {
 }
