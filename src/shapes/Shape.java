@@ -1,2 +1,7 @@
-package shapes;public interface Shape {
+package shapes;
+
+public interface Shape {
+    double getPerimeter();
+    double getArea();
+
 }
