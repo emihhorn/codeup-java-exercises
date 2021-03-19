@@ -1,9 +1,6 @@
 package grades;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-
 
 
 //TODO:Create a class named Student. It should have private properties for the
@@ -20,7 +17,8 @@ public class Student {
         this.name = name;
     }
 
-    public static void put(String student) {
+    public static String put(String student) {
+        return student;
     }
 
     // Should have the following methods:
@@ -53,15 +51,15 @@ public class Student {
 
     // public class Grades {
     //on Stackoverflow
-    private Map<String, Integer> store = new HashMap<>();
+//    private Map<String, Integer> store = new HashMap<>();
+//
+//    public void storeMinimumGrade(Student student) {
+//        Integer grade = store.get(student.getName());
+//        if (grade == null || student.getGradeAverage() < grade) {
+//            grade.toString(Integer.parseInt(name), grade);
+//        }
 
-    public void storeMinimumGrade(Student student) {
-        Integer grade = store.get(student.getName());
-        if (grade == null || student.getGradeAverage() < grade) {
-            grade.toString(Integer.parseInt(name), grade);
-        }
 
 
-
-    }
+//    }
 }
