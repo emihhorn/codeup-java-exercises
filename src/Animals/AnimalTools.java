@@ -4,7 +4,7 @@ import Animals.Canine;
 import Animals.Dog;
 import Animals.Wolf;
 
-import Animals.Giraffe;
+//import Animals.Giraffe;
 import Animals.Okapis;
 
 import java.util.Locale;
@@ -39,21 +39,21 @@ public class AnimalTools {
         }
     }
 
-    public static void getGiraffidsInfo(){
-        Giraffids giraffids;
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Input Giraffe or Okapis");
-
-        String input = scanner.nextLine().toLowerCase();
-
-        if (input.equals("giraffe")){
-            giraffids = new Giraffe("VEry tall", "Like a Deep Humming, very low - mrrrruuuum",
-                    "describes the type of hoof, closer to a pig than a horse and they walk on tip toes. " )
-            {
-            };
-        }
-    }
+//    public static void getGiraffidsInfo(){
+//        Giraffids giraffids;
+//
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.println("Input Giraffe or Okapis");
+//
+//        String input = scanner.nextLine().toLowerCase();
+//
+//        if (input.equals("giraffe")){
+//            giraffids = new Giraffe("VEry tall", "Like a Deep Humming, very low - mrrrruuuum",
+//                    "describes the type of hoof, closer to a pig than a horse and they walk on tip toes. " )
+//            {
+//            };
+//        }
+//    }
 
 }
