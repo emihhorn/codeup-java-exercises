@@ -1,6 +1,6 @@
 package Animals;
 
-public class Giraffe extends Giraffids {
+//public class Giraffe extends Giraffids {
 //    public Giraffe(String s, String s1, String s2) {
 //        super();
 //    }
@@ -8,12 +8,12 @@ public class Giraffe extends Giraffids {
     //    -> Give each of the animals properties
     //    -> Think about similarities between the two and differences
     //    -> Implement methods that represent an action each animal can take
-    private String coatPattern = "unique like a fingerprint";
-
-    public Giraffe(String sound, String height, String UnguligradeSpecies) {
-        super(height, sound, UnguligradeSpecies);
-        this.coatPattern = coatPattern;
-    }
+//    private String coatPattern = "unique like a fingerprint";
+//
+//    public Giraffe(String sound, String height, String UnguligradeSpecies) {
+//        super(height, sound, UnguligradeSpecies);
+//        this.coatPattern = coatPattern;
+//    }
 
     //public void makeSound() {
     //        System.out.println(sound + "\n");
@@ -57,4 +57,4 @@ public class Giraffe extends Giraffids {
     //TODO: BONUS -> Create another abstract class that will umbrella both Canine and your new animal family's abstract class
     //            -> Could we use this as a way to further simplify our code? Could it make our logic that decides what animal to print out a little easier?
 
-}
+//}
