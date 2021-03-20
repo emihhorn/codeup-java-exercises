@@ -1,6 +1,7 @@
 package grades;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 //TODO:Create a class named Student. It should have private properties for the
@@ -10,12 +11,14 @@ import java.util.ArrayList;
 
 public class Student {
     private String name;
-    private ArrayList<Integer> grades = new ArrayList<>();
+    private List<Integer> grades;
 
-    public Student(String name, int grades) {
+    public Student(String name) {
         this.grades = new ArrayList<>();
         this.name = name;
     }
+
+
 
     public static String put(String student) {
         return student;
@@ -25,7 +28,7 @@ public class Student {
     // returns the student's name
     //   public String getName();
     public String getName() {
-        return this.name;
+        return name;
     }
 
     // adds the given grade to the grades property
@@ -37,17 +40,9 @@ public class Student {
     // returns the average of the students grades
     //   public double getGradeAverage();
     public double getGradeAverage() {
-        double sum = 0;
-        for (int grade : grades) {
-            sum += grade;
+
+            return (double) grades.stream().reduce(Integer::sum).get() / grades.size();
         }
-        return sum / grades.size();
-    }
-
-    public ArrayList<Integer> getGrades() {
-        return this.grades;
-    }
-
 
     // public class Grades {
     //on Stackoverflow
