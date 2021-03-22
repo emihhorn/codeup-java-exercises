@@ -1,7 +1,5 @@
 package prep;
 
-import java.util.Arrays;
-
 public class Arthimetic {
 
     //Todo: square - takes in an int argument, returns the square of that number as an int
