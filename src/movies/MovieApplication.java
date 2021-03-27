@@ -1,4 +1,4 @@
-package Movie;
+package movies;
 
 import util.Input;
 
