@@ -1,4 +1,4 @@
-package OopLecture;
+package oopLecture;
 
 public class DishTools {
     public static final int averageCost = 1300;
