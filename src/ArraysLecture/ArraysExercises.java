@@ -1,6 +1,6 @@
 package ArraysLecture;
 
-import OopLecture.Person;
+import oopLecture.Person;
 
 import java.util.Arrays;
 
