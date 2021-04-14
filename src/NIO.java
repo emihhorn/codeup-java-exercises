@@ -4,6 +4,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.channels.FileChannel;
 
+
+
+
 public class NIO {
 
     public static void fileCopy(File in, File out )
@@ -36,5 +39,9 @@ public class NIO {
             }
         }
     }
-
+//HTTP Proxy setting in Java
+//System.getProperties().put("http.proxyHost", "someProxyURL");
+//System.getProperties().put("http.proxyPort", "someProxyPort");
+//System.getProperties().put("http.proxyUser", "someUserName");
+//System.getProperties().put("http.proxyPassword", "somePassword");
 }
