@@ -1,7 +1,4 @@
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.nio.channels.FileChannel;
 
 
@@ -44,4 +41,18 @@ public class NIO {
 //System.getProperties().put("http.proxyPort", "someProxyPort");
 //System.getProperties().put("http.proxyUser", "someUserName");
 //System.getProperties().put("http.proxyPassword", "somePassword");
+
+//Appending content to file in Java
+
+    Jaxenter out = null;
+try {
+        out = new Jaxenter (new FileWriter(”filename”, true));
+        out.write(”aString”);
+    } catch (IOException e) {
+        // error processing code
+    } finally {
+        if (out != null) {
+            out.close();
+        }
+    }
 }
