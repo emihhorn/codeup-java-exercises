@@ -6,32 +6,25 @@ import java.nio.channels.FileChannel;
 
 public class NIO {
 
-    public static void fileCopy(File in, File out )
-            throws IOException
-    {
-        FileChannel inChannel = new FileInputStream( in ).getChannel();
-        FileChannel outChannel = new FileOutputStream( out ).getChannel();
-        try
-        {
+    public static void fileCopy(File in, File out)
+            throws IOException {
+        FileChannel inChannel = new FileInputStream(in).getChannel();
+        FileChannel outChannel = new FileOutputStream(out).getChannel();
+        try {
 //          inChannel.transferTo(0, inChannel.size(), outChannel);      // original -- apparently has trouble copying large files on Windows
 
             // magic number for Windows, 64Mb - 32Kb)
             int maxCount = (64 * 1024 * 1024) - (32 * 1024);
             long size = inChannel.size();
             long position = 0;
-            while ( position < size )
-            {
-                position += inChannel.transferTo( position, maxCount, outChannel );
+            while (position < size) {
+                position += inChannel.transferTo(position, maxCount, outChannel);
             }
-        }
-        finally
-        {
-            if ( inChannel != null )
-            {
+        } finally {
+            if (inChannel != null) {
                 inChannel.close();
             }
-            if ( outChannel != null )
-            {
+            if (outChannel != null) {
                 outChannel.close();
             }
         }
@@ -42,17 +35,23 @@ public class NIO {
 //System.getProperties().put("http.proxyUser", "someUserName");
 //System.getProperties().put("http.proxyPassword", "somePassword");
 
-//Appending content to file in Java
+//Implement an algorithm to determine if a string has all unique characters.
+// What if you cannot use additional data structure?
 
-    Jaxenter out = null;
-try {
-        out = new Jaxenter (new FileWriter(”filename”, true));
-        out.write(”aString”);
-    } catch (IOException e) {
-        // error processing code
-    } finally {
-        if (out != null) {
-            out.close();
+    boolean isUniqueChars(String str) {
+        if (str.length() > 128) return false;
+
+        boolean[] char_set = new boolean[128];
+        for (int i = 0; i < str.length(); i++) {
+            int val = str.charAt(i);
+            if (char_set[val]) { // Already found this char in string
+                return false;
+            }
+            char_set[val] = true;
         }
+        return true;
     }
 }
+
+
+
